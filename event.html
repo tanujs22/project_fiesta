@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <!-- For mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+
+		body
+		{
+			background-color:#f2f2f2;
+		}
+		#active
+		{
+			border-radius:100px; 
+			background-color:#ec0249; 
+			height:70px; 
+			width:75px; 
+			margin-top:-20px;
+			color:#ffffff;
+		}
+		#a
+		{
+			font-size:25px;
+			color:red;
+		}
+		button span
+		{
+			font-size:25px;
+			color:#ffffff;
+		}
+		.navbar-default
+		{
+			background-color:#f9f9f9;
+			border-color:#f9f9f9;
+			padding:20px;
+			border-radius:5px;
+		}
+		.glyphicon-menu-left
+		{
+			color:#ec0249;
+			font-size:30px;
+			padding-top:10px;
+			font-weight:bold;
+		}
+		.navbar-brand h2
+		{
+			font-size:35px; 
+			color:dark gray; 
+			font-weight:bold; 
+			margin-top:-10px;
+		}
+		#tabmenu
+		{
+			background-color:#ffffff; 
+			padding:40px; 
+			padding-top:10px;
+			border-radius:5px;
+		}
+		#tabmenu h4
+		{
+			color:#828282;
+		}
+		#submenu
+		{
+			background-color:#ffffff; 
+			padding: 20px;
+			margin: 5px; 
+			border-radius:3px;
+		}
+		#submenu h5
+		{
+			color:#828282; 
+			font-size:19px; 
+			font-weight:bold;
+		}
+		.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+		{
+			font-size:40px;
+		}
+		#b
+		{
+			font-size:40px;
+			color:#f19114;
+		}
+		.glyphicon-calendar
+		{
+			color:#15be60;
+		}
+		.glyphicon-bookmark
+		{
+			color:#187fa6;
+		}
+		.glyphicon-tag
+		{
+			color:#ec3434;
+		}
+		#line
+		{
+			border-right: solid #f2f2f2;
+		}
+		#hline
+		{
+			color:#f2f2f2;
+			border-width:3px; 
+			padding-left:5px; 
+			margin-right:50px; 
+			margin-left:50px;
+		}
+		a:hover
+		{
+			text-decoration:none;
+		}
+		@media only screen and (max-width: 500px)
+		{
+			.navbar-default
+			{
+				background-color:#f9f9f9;
+				border-color:#f9f9f9;
+				padding:10px;
+				border-radius:5px;
+			}
+			.glyphicon-menu-left
+			{
+				color:#ec0249;
+				font-size:15px;
+				padding-top:7px;
+				font-weight:bold;
+			}
+			.navbar-brand h2
+			{
+				font-size:22px; 
+				color:dark gray; 
+				font-weight:bold; 
+				margin-top:-10px;
+			}
+			#submenu
+			{
+				background-color:#ffffff; 
+				padding: 10px;
+				margin: 2px; 
+				border-radius:3px;
+			}
+			#submenu h5
+			{
+				color:#828282; 
+				font-size:15px; 
+				font-weight:bold;
+			}
+			#active
+			{
+				border-radius:15px; 
+				background-color:#ec0249; 
+				height:30px; 
+				width:35px; 
+				margin-top:-15px; 
+				color:#ffffff;
+			}
+			#a
+			{
+				font-size:15px;
+				color:#ffffff;
+			}
+			button span
+			{
+				font-size:15px;
+				color:#ffffff;
+			}
+			.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+			{
+				font-size:20px;
+			}
+			#b
+			{
+				font-size:20px;
+				color:#f19114;
+			}
+			#tabmenu
+			{
+				background-color:#ffffff; 
+				padding:10px; 
+				border-radius:3px;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div id="container">	
+	<!-- ***bottom navbar starts*** -->
+	<nav class="navbar navbar-inverse navbar-fixed-bottom" style="background-color:#262626;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-home"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link" id="a"><span class="glyphicon glyphicon-search"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-4">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link" id="active"><span class="glyphicon glyphicon-plus"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-comment"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-user"></span></center>
+							</button>
+						</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- ***bottom navbar ends*** -->
+	
+	<!-- ***top heading starts*** -->
+	<br>
+	<div id="topnav">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-1">
+					<a href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
+				</div>
+				<div class="col-xs-4">
+				</div>
+				<div class="col-xs-3">
+					<a class="navbar-brand" href="#"><center><h2>Events</h2></center></a>
+				</div>
+				<div class="col-xs-4">
+				</div>
+			</div>
+		</div>
+	</nav>
+	</div>
+	<!-- ***top heading ends*** -->
+	
+	<br><br>
+	
+	<!-- ***event menu starts*** -->
+	<br>
+	<div id="tabmenu">
+	<div class="row" style=" padding-bottom:20px;">
+		<div class="col-xs-6" id="line">
+			<a href="#"><center><span class="glyphicon glyphicon-calendar"></span><br><h4>Create Event</h4></center></a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#"><center><span class="glyphicon glyphicon-search" id="b"></span><br><h4>Search Events</h4></center></a>
+		</div>
+	</div>
+	<hr id="hline">
+	<div class="row" style="padding-top:20px;">
+		<div class="col-xs-6" id="line">
+			<a href="#"><center><span class="glyphicon glyphicon-bookmark"></span><br><h4>Booked Events</h4></center></a>
+		</div>
+		<div class="col-xs-6">
+			<a href="#"><center><span class="glyphicon glyphicon-tag" style=""></span><br><h4>Referrals</h4></center></a>
+		</div>
+	</div>
+	</div>
+	<!-- ***event menu ends*** -->
+	
+	<br><br>
+	<br><br>
+	
+	<!-- ***Secondary menu starts*** -->
+	<div id="submenu">
+	<div class="row">
+		<div class="col-xs-10">
+			<a href="#"><h5><span class="glyphicon glyphicon-road"></span> Venues Nearby</h5>
+		</div>
+		<div class="col-xs-2">
+			<h5><span class="glyphicon glyphicon-menu-right" style="color:#828282; float:right;"></span></a></h5>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-10">
+			<a href="#"><h5><span class="glyphicon glyphicon-map-marker"></span> Your Location</h5>
+		</div>
+		<div class="col-xs-2">
+			<h5><span class="glyphicon glyphicon-menu-right" style="color:#828282; float:right;"></span></a></h5>
+		</div>
+	</div>
+	</div>
+	<!-- ***secondary menu ends*** -->
+	
+	<br><br><br><br><br><br>
+</body>
+</html>
