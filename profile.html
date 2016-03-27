@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <!-- For mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<style>
+		body
+		{
+			background-color:#f2f2f2;
+		}
+		#active
+		{
+			border-radius:100px; 
+			background-color:#ec0249; 
+			height:70px; 
+			width:75px; 
+			margin-top:-20px; 
+			color:#ffffff;
+		}
+		button span
+		{
+			font-size:25px;
+			color:#ffffff;
+		}
+		#1 span
+		{
+			font-size:25px;
+		}
+		.navbar-brand h2
+		{
+			font-size:30px; 
+			color:dark gray; 
+			font-weight:bold; 
+			margin-top:-15px;
+		}
+		.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+		{
+			color: #828282;
+			font-size:25px; 
+			font-weight:bold;
+		}
+		.navbar-default
+		{
+			background-color:#f9f9f9; 
+			border-color:#f9f9f9; 
+			padding:20px;
+		}
+		.glyphicon-menu-left
+		{
+			color:#ec0249; 
+			font-size:30px; 
+			padding-top:10px; 
+			font-weight:bold;
+		}
+		.profile
+		{
+			background-color:#ffffff; 
+			padding:40px; 
+			margin:0px; 
+			border-radius:5px;
+		}
+		.profile h5
+		{
+			font-weight:bold; 
+			font-size:25px; 
+			color:#828282;
+		}
+		.profile p
+		{
+			font-size:18px; 
+			color:#828282;
+		}
+		hr
+		{
+			color:#f2f2f2;
+		}
+		.row button
+		{
+			font-size:19px; 
+			color:#828282; 
+			font-weight:bold;
+		}
+		.badge
+		{
+			background-color:#ffffff; 
+			color:#828282; 
+			font-size:19px;
+		}
+		.menu
+		{
+			background-color:#ffffff; 
+			padding:30px; 
+			border-radius:5px;
+			height:600px;
+		}
+		#follow
+		{
+			background-color:#ec0249;
+			color:#ffffff; 
+			font-size:25px; 
+			font-weight:bold; 
+			border-color:#ec0249;
+		}
+		@media only screen and (max-width: 500px)
+		{
+			#active
+			{
+				border-radius:15px; 
+				background-color:#ec0249; 
+				height:30px; 
+				width:35px; 
+				margin-top:-15px; 
+				color:#ffffff;
+			}
+			button span
+			{
+				font-size:15px;
+				color:#ffffff;
+			}
+			.navbar-default
+			{
+				background-color:#f9f9f9;
+				border-color:#f9f9f9;
+				padding:10px;
+				border-radius:5px;
+			}
+			.glyphicon-menu-left
+			{
+				color:#ec0249;
+				font-size:15px;
+				padding-top:7px;
+				font-weight:bold;
+			}
+			.navbar-brand h2
+			{
+				font-size:22px; 
+				color:dark gray; 
+				font-weight:bold; 
+				margin-top:-10px;
+			}
+			.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+			{
+				color: #828282;
+				font-size:15px; 
+				font-weight:bold;
+			}
+			.profile
+			{
+				background-color:#ffffff; 
+				padding:30px; 
+				margin:0px; 
+				border-radius:5px;
+			}
+			.profile h5
+			{
+				font-weight:bold; 
+				font-size:18px; 
+				color:#828282;
+			}
+			.profile p
+			{
+				font-size:12px; 
+				color:#828282;
+			}
+			img
+			{
+				width: 150px ;
+				height: 100px;
+			}
+			.row button
+			{
+				font-size:14px; 
+				color:#828282; 
+				font-weight:bold;
+			}
+			.badge
+			{
+				background-color:#ffffff; 
+				color:#828282; 
+				font-size:14px;
+			}
+			#follow
+			{
+				background-color:#ec0249;
+				color:#ffffff; 
+				font-size:18px; 
+				font-weight:bold; 
+				border-color:#ec0249;
+				padding:2px;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid">
+  <div id="container">	
+  
+	<!-- ***bottom navbar starts*** -->
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="container-fluid">
+			<div class="row" id="1">
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-home"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-search"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-4">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-plus"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-comment"></span></center>
+							</button>
+						</a>
+				</div>
+				<div class="col-xs-2">
+						<a href="#">
+							<center><button type="button" class="btn btn-xs btn-link" id="active"><span class="glyphicon glyphicon-user"></span></center>
+							</button>
+						</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- ***bottom navbar ends*** -->
+	
+	<!-- ***top heading starts*** -->
+	<br>
+	<div class="navtop">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-1">
+					<span class="glyphicon glyphicon-menu-left" style=""></span>
+				</div>
+				<div class="col-xs-4">
+				</div>
+				<div class="col-xs-4">
+					<a class="navbar-brand" href="#"><center><h2>My Profile</h2></center></a>
+				</div>
+				<div class="col-xs-3">
+				</div>
+			</div>
+		</div>
+	</nav>
+	</div>
+	<!-- ***top heading ends*** -->
+	
+	<br><br><br>
+	
+	<!-- ***Profile Pic, Name & Description*** -->
+	<div class="profile">
+	<center>
+		 <img src="userdp.png" class="img-circle" alt="Cinque Terre" width="274" height="226">
+		 <h5> Name </h5>
+		 <p> Description <br> About Me </p>
+	</center>
+	<!-- ***profile description ends*** -->
+	
+	<hr>
+	
+	<!-- ***follower and following buttons*** -->
+	<div class="row" id="2">
+		<div class="col-xs-6">
+			<center><button type="button" class="btn btn-xs btn-link">Followers<span class="badge">20</span></button></center>
+		</div>
+		<div class="col-xs-6">
+			<center><button type="button" class="btn btn-xs btn-link">Following<span class="badge">40</span></button></center>
+		</div>
+	</div>
+	</div>
+	<!-- ***follower button ends*** -->
+	
+	<br><br>
+	
+	<!-- ***menu starts here*** -->
+	<div class="menu">
+	<div class="row">
+		<div class="col-xs-3">
+			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-th"></span></button></center>
+		</div>
+		<div class="col-xs-3">
+			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-menu-hamburger"></span></button></center>
+		</div>
+		<div class="col-xs-3">
+			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-map-marker"></span></button></center>
+		</div>
+		<div class="col-xs-3">
+			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-list"></span></button></center>
+		</div>
+	</div>
+	<!-- ***menu ends here*** -->
+	
+	<hr>
+	<br><br>
+	
+	<!-- ***follow button*** -->
+	<div class="row">
+		<div class="col-xs-3">
+		</div>
+		<div class="col-xs-6">
+			<button type="button" class="btn btn-xs btn-primary btn-block" id="follow"><h6><span class="glyphicon glyphicon-plus">FOLLOW</span></h6></button>
+		</div>
+		<div class="col-xs-3">
+		</div>
+	</div>
+	</div>
+	<!-- ***follow button ends*** -->
+  </div>
+</div>
+</body>
+</html>
