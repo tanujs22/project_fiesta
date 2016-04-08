@@ -1,0 +1,203 @@
+body
+		{
+			background-color:#f2f2f2;
+		}
+		#active
+		{
+			border-radius:120px; 
+			background-color:#ec0249; 
+			height:80px; 
+			width:85px; 
+			margin-top:-20px;
+			color:#ffffff;
+		}
+		#bottom
+		{
+			background-color:#262626;
+			height:40px;
+		}
+		#a
+		{
+			font-size:25px;
+			color:#ec0249;
+		}
+		button span
+		{
+			margin-top:10px;
+			font-size:25px;
+			color:#ffffff;
+		}
+		.navbar-default
+		{
+			background-color:#f9f9f9;
+			border-color:#f9f9f9;
+			padding:20px;
+			border-radius:5px;
+			box-shadow: 2px 2px #d9d9d9;
+		}
+		.glyphicon-menu-left
+		{
+			color:#ec0249;
+			font-size:30px;
+			padding-top:10px;
+			font-weight:bold;
+		}
+		.navbar-brand h2
+		{
+			font-size:35px; 
+			color:dark gray; 
+			font-weight:bold; 
+			margin-top:-10px;
+		}
+		#tabmenu
+		{
+			background-color:#ffffff; 
+			padding:40px; 
+			padding-top:10px;
+			border-radius:5px;
+			box-shadow: 2px 2px #d9d9d9;
+		}
+		#tabmenu h4
+		{
+			color:#828282;
+		}
+		#submenu
+		{
+			background-color:#ffffff; 
+			padding: 20px;
+			margin: 5px; 
+			border-radius:3px;
+			box-shadow: 2px 2px #d9d9d9;
+		}
+		#submenu h5
+		{
+			color:#828282; 
+			font-size:19px; 
+			font-weight:bold;
+		}
+		.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+		{
+			font-size:40px;
+		}
+		#b
+		{
+			font-size:40px;
+			color:#f19114;
+			padding-top:20px;
+		}
+		.glyphicon-calendar
+		{
+			color:#15be60;
+			padding-top:20px;
+		}
+		.glyphicon-bookmark
+		{
+			color:#187fa6;
+		}
+		.glyphicon-tag
+		{
+			color:#ec3434;
+		}
+		#line
+		{
+			border-right: solid #f2f2f2;
+		}
+		#hline
+		{
+			color:#f2f2f2;
+			border-width:3px; 
+			padding-left:5px; 
+			margin-right:50px; 
+			margin-left:50px;
+		}
+		a:hover
+		{
+			text-decoration:none;
+		}
+		@media only screen and (max-width: 500px)
+		{
+			.navbar-default
+			{
+				background-color:#f9f9f9;
+				border-color:#f9f9f9;
+				padding:10px;
+				border-radius:5px;
+			}
+			.glyphicon-menu-left
+			{
+				color:#ec0249;
+				font-size:15px;
+				padding-top:7px;
+				font-weight:bold;
+			}
+			.navbar-brand h2
+			{
+				font-size:22px; 
+				color:dark gray; 
+				font-weight:bold; 
+				margin-top:-10px;
+			}
+			#submenu
+			{
+				background-color:#ffffff; 
+				padding: 10px;
+				margin: 2px; 
+				border-radius:3px;
+			}
+			#submenu h5
+			{
+				color:#828282; 
+				font-size:15px; 
+				font-weight:bold;
+			}
+			#active
+			{
+				border-radius:100px; 
+				background-color:#ec0249; 
+				height:70px; 
+				width:75px; 
+				margin-top:-10px;
+				color:#ffffff;
+			}
+			#bottom
+			{
+				background-color:#262626;
+				height:40px;
+			}
+			#a
+			{
+				font-size:25px;
+				color:#ec0249;
+			}
+			button span
+			{
+				margin-top:10px;
+				font-size:25px;
+				color:#ffffff;
+			}
+			.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+			{
+				font-size:20px;
+				padding-top:10px;
+			}
+			#b
+			{
+				font-size:20px;
+				color:#f19114;
+				padding-top:10px;
+			}
+			#tabmenu
+			{
+				background-color:#ffffff; 
+				padding:10px; 
+				border-radius:3px;
+			}
+			#hline
+		{
+			color:#f2f2f2;
+			border-width:3px; 
+			padding-left:5px; 
+			margin-right:15px; 
+			margin-left:15px;
+		}
+		}
