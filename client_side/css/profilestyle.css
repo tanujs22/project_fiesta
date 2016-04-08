@@ -1,0 +1,241 @@
+body
+		{
+			background-color:#f2f2f2;
+		}
+		#active
+		{
+			border-radius:120px; 
+			background-color:#ec0249; 
+			height:80px; 
+			width:85px; 
+			margin-top:-20px;
+			color:#ffffff;
+		}
+		#bottom
+		{
+			background-color:#262626;
+			height:40px;
+		}
+		#a
+		{
+			font-size:25px;
+			color:#ec0249;
+		}
+		button span
+		{
+			margin-top:10px;
+			font-size:25px;
+			color:#ffffff;
+		}
+		
+		.navbar-brand h2
+		{
+			font-size:30px; 
+			color:dark gray; 
+			font-weight:bold; 
+			margin-top:-15px;
+		}
+		.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+		{
+			color: #828282;
+			font-size:25px; 
+			font-weight:bold;
+		}
+		.navbar-default
+		{
+			background-color:#f9f9f9; 
+			border-color:#f9f9f9; 
+			padding:20px;
+			box-shadow:2px 2px #d9d9d9;
+		}
+		.glyphicon-menu-left
+		{
+			color:#ec0249; 
+			font-size:30px; 
+			padding-top:10px; 
+			font-weight:bold;
+		}
+		.profile
+		{
+			background-color:#ffffff; 
+			padding:40px; 
+			margin:0px; 
+			border-radius:5px;
+			box-shadow:2px 2px #d9d9d9;
+		}
+		.profile h5
+		{
+			font-weight:bold; 
+			font-size:25px; 
+			color:#828282;
+		}
+		.profile p
+		{
+			font-size:18px; 
+			color:#828282;
+		}
+		hr
+		{
+			color:#f2f2f2;
+		}
+		.row button
+		{
+			font-size:19px; 
+			color:#828282; 
+			font-weight:bold;
+		}
+		.badge
+		{
+			background-color:#ffffff; 
+			color:#828282; 
+			font-size:19px;
+			margin-bottom:10px;
+		}
+		.menu
+		{
+			background-color:#ffffff; 
+			padding:30px; 
+			border-radius:5px;
+			height:600px;
+			box-shadow:2px 2px #d9d9d9;
+		}
+		#follow
+		{
+			background-color:#ec0249;
+			color:#ffffff; 
+			font-size:25px; 
+			font-weight:bold; 
+			border-color:#ec0249;
+			box-shadow:2px 2px #d9d9d9;
+		}
+		@media only screen and (max-width: 500px)
+		{
+			#active
+			{
+				border-radius:100px; 
+				background-color:#ec0249; 
+				height:70px; 
+				width:55px; 
+				margin-top:-10px;
+				color:#ffffff;
+				padding-right:100px;
+			}
+			#bottom
+			{
+				background-color:#262626;
+				height:40px;
+			}
+			.glyphicon-search
+			{
+				padding-left:10px;
+			}
+			.glyphicon-plus  
+			{
+				padding-left:25px;
+			}
+			.glyphicon-comment
+			{
+				padding-right:0px;
+			}
+			button span
+			{
+				margin-top:10px;
+				font-size:25px;
+				color:#ffffff;
+			}
+			.navbar-default
+			{
+				background-color:#f9f9f9;
+				border-color:#f9f9f9;
+				padding:10px;
+				border-radius:5px;
+				box-shadow:2px 2px #d9d9d9;
+			}
+			.glyphicon-menu-left
+			{
+				color:#ec0249;
+				font-size:15px;
+				padding-top:7px;
+				font-weight:bold;
+			}
+			.navbar-brand h2
+			{
+				font-size:22px; 
+				color:dark gray; 
+				font-weight:bold; 
+				margin-top:-10px;
+				margin-left:-45px;
+			}
+			.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+			{
+				color: #828282;
+				font-size:15px; 
+				font-weight:bold;
+			}
+			.profile
+			{
+				background-color:#ffffff; 
+				padding:30px; 
+				margin:0px; 
+				border-radius:5px;
+			}
+			.profile h5
+			{
+				font-weight:bold; 
+				font-size:18px; 
+				color:#828282;
+			}
+			.profile p
+			{
+				font-size:12px; 
+				color:#828282;
+			}
+			img
+			{
+				width: 150px ;
+				height: 100px;
+			}
+			.menu
+			{
+				background-color:#ffffff; 
+				padding:30px; 
+				border-radius:5px;
+				height:400px;
+				box-shadow:2px 2px #d9d9d9;
+			}
+			.row button
+			{
+				font-size:14px; 
+				color:#828282; 
+				font-weight:bold;
+			}
+			.badge
+			{
+				background-color:#ffffff; 
+				color:#828282; 
+				font-size:14px;
+				margin-bottom:10px;
+			}
+			#follow span
+			{
+				background-color:#ec0249;
+				color:#ffffff; 
+				font-size:17px; 
+				font-weight:bold; 
+				border-color:#ec0249;
+				margin-right:10px;
+				padding-right:10px;
+				margin-bottom:10px;
+			}
+			#follow
+			{
+				background-color:#ec0249;
+				color:#ffffff; 
+				font-size:20px; 
+				font-weight:bold; 
+				border-color:#ec0249;
+				width:150px;
+				margin-left:-35px;
+				box-shadow:1px 1px #d9d9d9;
+			}
+		}
