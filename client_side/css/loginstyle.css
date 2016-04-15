@@ -1,0 +1,44 @@
+body
+		{
+			background-color:#f2f2f2;
+		}
+		#panel
+		{
+			margin-top:100px;
+			
+		}
+		#pwd , #email , #username , #gender 
+		{
+			border-style:none; 
+			background-color:#bfbfbf; 
+			border-color:#bfbfbf; 
+			border-bottom-color:#999999; 
+			box-shadow:0px 0px 1px #bfbfbf; 
+			border-bottom-style:solid; 
+			color:#ec0249;
+		}
+		ul
+		{
+			background-color:#a6a6a6;
+			color:#ffffff;
+			border-radius:5px 5px 0px 0px;
+			box-shadow:2px 2px #8c8c8c;
+		}
+		h5
+		{
+			color:#ec0249;
+			font-weight:bold;
+		}
+		.cover
+		{
+			background-color:#bfbfbf; 
+			height:500px;
+			border-radius:0px 0px 5px 5px; 
+			margin-top:-1px; 
+			box-shadow:2px 2px #8c8c8c;
+		}
+		.btn
+		{
+			background-color:#ec0249;
+			color:#a6a6a6;
+		}
