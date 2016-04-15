@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>Profile</title>
     <!-- For mobile first-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For Bootstrap -->
@@ -10,75 +10,92 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<style>
-		body
-		{
-				
-		}
-		form
-		{
-			margin-top:250px;
-		}
-		#submit
-		{
-			padding-top:70px;
-			margin-top: -95px;
-			background-color:#ec0249;
-			color:white;
-			border-radius: 5px;
-		}
-		.form-control
-		{
-			color:#f9f9f9;
-			font-size:22px;
-		}
-		#register
-		{
-			font-size:17px;
-			border-radius:20px;
-			color:white;
-			background-color:red;
-			
-		}
-		@media only screen and (max-width: 500px)
-		{
-			form
-			{
-				margin-top:190px;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
 <div class="container-fluid">
   <div id="container">	
-	 <form role="form">
-		<div class="form-group input-lg">
-			<div class="col-xs-offset-2 col-xs-6">
-				<label for="email"></label>
-				<input type="email" class="form-control" id="email" placeholder="User ID">
+	<div class="row" id="panel">
+		<div class="col-xs-3">
+		</div>
+		<div class="col-xs-6">
+			<ul class="nav nav-tabs" style="">
+				<li class="active" style="width:100px;"><a data-toggle="tab" href="#login"><h5>Log In</h5></a></li>
+				<li style="width:100px;"><a data-toggle="tab" href="#signin"><h5>Sign Up</h5></a></li>
+			</ul>
+		</div>
+		<div class="col-xs-3">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">
+		</div>
+		<div class="col-xs-6">
+			<div class="cover">
 			</div>
 		</div>
-		<div class="form-group input-lg">
-			<div class="col-xs-offset-2 col-xs-6">
-				<label for="pwd"></label>
-				<input type="password" class="form-control" id="pwd" placeholder="Password">
-			</div>
+		<div class="col-xs-3">
 		</div>
-		<div class="form-group">
-			<div class="col-xs-offset-8 col-xs-1">
-				<button type="submit" id="submit" class="btn btn-default btn-block">Sub</button>
-			</div>
+	</div>
+	<div class="tab-content">
+		<div id="login" class="tab-pane fade in active" >
+			<form role="form">
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-390px;">
+						<label for="email"></label>
+						<input type="email" class="form-control" id="email" placeholder="User ID">
+					</div>
+				</div>
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-350px;">
+						<label for="pwd"></label>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-offset-5 col-xs-2" style="margin-top:-270px;">
+						<br>
+						<button type="submit" id="submit" class="btn btn-default btn-lg btn-block">Log In</button>
+					</div>
+				</div>
+			</form>
 		</div>
-		<br>
-		<p style="margin-left:700px; font-size:22px;"> Not registered yet ? </p>
-		<div class="form-group">
-			<div class="col-xs-offset-7 col-xs-2">
-				<button type="submit" id="register" class="btn btn-default btn-block">Register   >>></button>
-			</div>
+		<div id="signin" class="tab-pane fade">
+			<form role="form">
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-450px;">
+						<label for="name"></label>
+						<input type="text" class="form-control" id="username" placeholder="username">
+					</div>
+				</div>
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-420px;">
+						<label for="pwd"></label>
+						<input type="password" class="form-control" id="pwd" placeholder="Password">	
+					</div>
+				</div>
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-390px;">
+						<label for="gender"></label>
+						<input type="text" class="form-control" id="gender" placeholder="gender">	
+					</div>
+				</div>
+				<div class="form-group input-lg">
+					<div class="col-xs-offset-3 col-xs-6" style="margin-top:-360px;">
+						<label for="email"></label>
+						<input type="email" class="form-control" id="email" placeholder="email">	
+					</div>
+				</div>
+				<div>
+					<div class="col-xs-offset-5 col-xs-2" style="margin-top:-330px;">
+						<br>
+						<center><button type="submit" id="signin" class="btn btn-default btn-lg btn-block" style="">Register </button></center>			
+					</div>
+				</div>
+			</form>
 		</div>
-	</form>
-  </div>
+	</div>
+ </div>
 </div>
 </body>
 </html>
