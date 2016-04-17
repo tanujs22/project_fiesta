@@ -1,8 +1,8 @@
-body
+		body
 		{
 			background-color:#f2f2f2;
 		}
-		#active
+		#home
 		{
 			border-radius:120px; 
 			background-color:#ec0249; 
@@ -75,26 +75,25 @@ body
 			font-size:19px; 
 			font-weight:bold;
 		}
-		.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+		.glyphicon-edit  , .glyphicon-time , .glyphicon-star-empty, .glyphicon-list-alt
 		{
 			font-size:40px;
 		}
-		#b
+		.glyphicon-list-alt
 		{
-			font-size:40px;
 			color:#f19114;
 			padding-top:20px;
 		}
-		.glyphicon-calendar
+		.glyphicon-edit
 		{
 			color:#15be60;
 			padding-top:20px;
 		}
-		.glyphicon-bookmark
+		.glyphicon-time
 		{
 			color:#187fa6;
 		}
-		.glyphicon-tag
+		.glyphicon-star-empty
 		{
 			color:#ec3434;
 		}
@@ -126,16 +125,17 @@ body
 			.glyphicon-menu-left
 			{
 				color:#ec0249;
-				font-size:15px;
+				font-size:30px;
 				padding-top:7px;
 				font-weight:bold;
 			}
 			.navbar-brand h2
 			{
-				font-size:22px; 
+				font-size:30px; 
 				color:dark gray; 
 				font-weight:bold; 
 				margin-top:-10px;
+				margin-left:-45px;
 			}
 			#submenu
 			{
@@ -150,7 +150,7 @@ body
 				font-size:15px; 
 				font-weight:bold;
 			}
-			#active
+			#home
 			{
 				border-radius:100px; 
 				background-color:#ec0249; 
@@ -175,7 +175,8 @@ body
 				font-size:25px;
 				color:#ffffff;
 			}
-			.glyphicon-calendar  , .glyphicon-bookmark , .glyphicon-tag
+			
+			.glyphicon-edit  , .glyphicon-time , .glyphicon-star-empty, .glyphicon-list-alt
 			{
 				font-size:20px;
 				padding-top:10px;
