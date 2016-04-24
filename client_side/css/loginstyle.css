@@ -1,88 +1,204 @@
 body
 		{
-			background-color:#f2f2f2;
+			background-color:#bfbfbf;	
 		}
-		#panel
+		#login
 		{
-			margin-top:100px;
-			
+			margin-top:50px; 
+			box-shadow:2px 2px 3px 1px #a6a6a6;
+			border-radius:5px;
 		}
-		#pwd , #email , #username , #gender 
+		h3
 		{
-			border-style:none; 
-			background-color:#bfbfbf; 
-			border-color:#bfbfbf; 
-			border-bottom-color:#999999; 
-			box-shadow:0px 0px 1px #bfbfbf; 
-			border-bottom-style:solid; 
-			color:#ec0249;
-		}
-		ul
-		{
-			background-color:#a6a6a6;
-			color:#ffffff;
-			border-radius:5px 5px 0px 0px;
-			box-shadow:2px 2px #8c8c8c;
-		}
-		h5
-		{
-			color:#ec0249;
 			font-weight:bold;
+			padding-left:20px;
 		}
-		.cover
+		.btn-facebook
 		{
-			background-color:#bfbfbf; 
-			height:500px;
-			border-radius:0px 0px 5px 5px; 
-			margin-top:-1px; 
-			box-shadow:2px 2px #8c8c8c;
+			color:white;
+			background-color:#3B5998; 
+			font-size:20px; 
+			box-shadow: 2px 2px 2px #a6a6a6;
 		}
-		.btn
+		.fa-facebook
 		{
-			background-color:#ec0249;
+			color:white;
+			background-color:#3B5998; 
+			font-size:30px; 
+			float:left;
+			padding-top:2px; 
+			padding-right:2px;
+		}
+		.btn-google-plus
+		{
+			color:white; 
+			background-color:#DD4B39; 
+			font-size:20px;
+			box-shadow: 2px 2px 2px #a6a6a6;
+		}
+		.fa-google-plus
+		{
+			color:white;
+			background-color:#DD4B39;
+			font-size:30px; 
+			float:left;
+			padding-top:2px;
+			padding-right:2px;
+		}
+		#email , #pwd
+		{
+			height:50px;
+			box-shadow:2px 2px 2px #a6a6a6;
+		}
+		.panel-footer a
+		{
 			color:#a6a6a6;
+			text-decoration:none;
 		}
-		@media only screen and (max-width: 500px)
+		#register
 		{
-			#panel
+			float:right; 
+			margin-top:-55px; 
+			box-shadow:2px 2px 2px #a6a6a6; 
+			color: #a6a6a6;
+		}
+		@media only screen and (max-width: 520px)
+		{
+			#login
 			{
-				margin-top:70px;	
+				margin-top:50px; 
+				box-shadow:2px 2px 3px 1px #a6a6a6;
+				border-radius:5px;
+				
 			}
-			#pwd , #email , #username , #gender 
+			.btn-facebook
 			{
-				border-style:none; 
-				background-color:#bfbfbf; 
-				border-color:#bfbfbf; 
-				border-bottom-color:#999999; 
-				box-shadow:0px 0px 1px #bfbfbf; 
-				border-bottom-style:solid; 
-				color:#ec0249;
+				color:white;
+				background-color:#3B5998; 
+				font-size:15px; 
+				box-shadow: 1px 1px 1px #a6a6a6;
 			}
-			ul
+			.fa-facebook
 			{
-				background-color:#a6a6a6;
-				color:#ffffff;
-				border-radius:5px 5px 0px 0px;
-				box-shadow:2px 2px #8c8c8c;
+				color:white;
+				background-color:#3B5998; 
+				font-size:20px; 
+				float:left;
+				padding-top:2px; 
+				padding-right:6px;
 			}
-			h5
+			.btn-google-plus
 			{
-				color:#ec0249;
-				font-weight:bold;
-				font-size:10px;
+				color:white; 
+				background-color:#DD4B39; 
+				font-size:15px;
+				box-shadow: 1px 1px 1px #a6a6a6;
 			}
-			.cover
+			.fa-google-plus
 			{
-				background-color:#bfbfbf; 
-				height:500px;
-				border-radius:0px 0px 5px 5px; 
-				margin-top:-1px; 
-				box-shadow:2px 2px #8c8c8c;
+				color:white;
+				background-color:#DD4B39;
+				font-size:20px; 
+				float:left;
+				padding-top:2px;
+				padding-right:2px;
 			}
-			.btn
+			.panel-footer a
 			{
-				background-color:#ec0249;
 				color:#a6a6a6;
+				text-decoration:none;
+				font-size:14px;
+				font-weight:bold;
+				margin-left:-6px;
+			}
+			#register
+			{
+				float:right; 
+				margin-top:-50px; 
+				box-shadow:1px 1px 1px #a6a6a6; 
+				color: #a6a6a6;
+			}
+			p
+			{
+				margin-top:0px;
+				padding-bottom:-15px;
+			}
+		}
+		@media only screen and (max-width: 450px)
+		{
+			h3
+			{
+				font-weight:bold;
+				padding-left:20px;
+				font-size:15px;
+				margin-left:-10px;
+			}
+			#login
+			{
+				margin-top:50px; 
+				box-shadow:2px 2px 3px 1px #a6a6a6;
+				border-radius:5px;
+				
+			}
+			.btn-facebook
+			{
+				color:white;
+				background-color:#3B5998; 
+				font-size:10px; 
+				box-shadow: 1px 1px 1px #a6a6a6;
+				width:135px;
+			}
+			.fa-facebook
+			{
+				color:white;
+				background-color:#3B5998; 
+				font-size:15px; 
+				float:left;
+				padding-top:0px; 
+				padding-right:6px;
+				margin-right:-3px;
+			}
+			.btn-google-plus
+			{
+				color:white; 
+				background-color:#DD4B39; 
 				font-size:10px;
+				box-shadow: 1px 1px 1px #a6a6a6;
+				width:135px;
+			}
+			.fa-google-plus
+			{
+				color:white;
+				background-color:#DD4B39;
+				font-size:15px; 
+				float:left;
+				padding-top:2px;
+				padding-right:2px;
+			}
+			.panel-footer a
+			{
+				color:#a6a6a6;
+				text-decoration:none;
+				font-size:9px;
+				font-weight:bold;
+				margin-left:-6px;
+			}
+			#pwd , #email
+			{
+				width:135px;
+				margin-left:-10px;
+				height:40px;
+			}
+			#register
+			{
+				float:right; 
+				margin-top:-20px; 
+				box-shadow:1px 1px 1px #a6a6a6; 
+				color: #a6a6a6;
+				height:20px;
+			}
+			#register p
+			{
+				margin-top:-8px;
 			}
 		}
