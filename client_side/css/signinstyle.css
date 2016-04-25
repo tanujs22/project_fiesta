@@ -1,0 +1,64 @@
+body
+		{
+			background-color:#bfbfbf;
+		}
+		#login
+		{
+			margin-top:50px; 
+			box-shadow:2px 2px 3px 1px #a6a6a6;
+			border-radius:5px;
+		}
+		h3
+		{
+			font-weight:bold;
+			padding-left:20px;
+			padding-top:10px;
+			padding-bottom:1px;
+		}
+		.form
+		{
+			border-color:white;
+			margin-top:-50px;
+		}
+		#username, #pwd, #date, #gender, #phone, #email
+		{
+			height:50px;
+			box-shadow:2px 2px 2px #a6a6a6;
+		}
+		#register
+		{
+			width:135px;
+			font-size:20px;
+			font-weight:bold;
+			margin-top:10px;
+			box-shadow:2px 2px 2px #a6a6a6;
+			margin-bottom:10px;
+			color: #a6a6a6;
+		}
+		.row
+		{
+			margin-top:30px; 
+			margin-bottom:50px;
+		}
+		@media only screen and (max-width:450px)
+		{
+			h3
+			{
+				font-weight:bold;
+				font-size:18px;
+			}
+			#register
+			{
+				width:105px;
+				font-size:18px;
+				font-weight:bold;
+				margin-top:10px;
+				margin-bottom:10px;
+				box-shadow:2px 2px 2px #a6a6a6;
+			}
+			.row
+			{
+				margin-top:30px; 
+				margin-bottom:50px;
+			}
+		}

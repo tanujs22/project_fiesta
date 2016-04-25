@@ -62,8 +62,18 @@ body
 			box-shadow:2px 2px 2px #a6a6a6; 
 			color: #a6a6a6;
 		}
-		@media only screen and (max-width: 500px)
+		@media only screen and (max-width: 520px)
 		{
+<<<<<<< HEAD
+=======
+			#login
+			{
+				margin-top:50px; 
+				box-shadow:2px 2px 3px 1px #a6a6a6;
+				border-radius:5px;
+				
+			}
+>>>>>>> 3430444b2c83e7133cb6ab84f77fd4bd8147cc4f
 			.btn-facebook
 			{
 				color:white;
@@ -95,6 +105,7 @@ body
 				float:left;
 				padding-top:2px;
 				padding-right:2px;
+<<<<<<< HEAD
 			}
 			.panel-footer a
 			{
@@ -110,5 +121,105 @@ body
 				margin-top:-50px; 
 				box-shadow:1px 1px 1px #a6a6a6; 
 				color: #a6a6a6;
+=======
+			}
+			.panel-footer a
+			{
+				color:#a6a6a6;
+				text-decoration:none;
+				font-size:14px;
+				font-weight:bold;
+				margin-left:-6px;
+			}
+			#register
+			{
+				float:right; 
+				margin-top:-50px; 
+				box-shadow:1px 1px 1px #a6a6a6; 
+				color: #a6a6a6;
+			}
+			p
+			{
+				margin-top:0px;
+				padding-bottom:-15px;
+			}
+		}
+		@media only screen and (max-width: 450px)
+		{
+			h3
+			{
+				font-weight:bold;
+				padding-left:20px;
+				font-size:15px;
+				margin-left:-10px;
+			}
+			#login
+			{
+				margin-top:50px; 
+				box-shadow:2px 2px 3px 1px #a6a6a6;
+				border-radius:5px;
+				
+			}
+			.btn-facebook
+			{
+				color:white;
+				background-color:#3B5998; 
+				font-size:10px; 
+				box-shadow: 1px 1px 1px #a6a6a6;
+				width:135px;
+			}
+			.fa-facebook
+			{
+				color:white;
+				background-color:#3B5998; 
+				font-size:15px; 
+				float:left;
+				padding-top:0px; 
+				padding-right:6px;
+				margin-right:-3px;
+			}
+			.btn-google-plus
+			{
+				color:white; 
+				background-color:#DD4B39; 
+				font-size:10px;
+				box-shadow: 1px 1px 1px #a6a6a6;
+				width:135px;
+			}
+			.fa-google-plus
+			{
+				color:white;
+				background-color:#DD4B39;
+				font-size:15px; 
+				float:left;
+				padding-top:2px;
+				padding-right:2px;
+			}
+			.panel-footer a
+			{
+				color:#a6a6a6;
+				text-decoration:none;
+				font-size:9px;
+				font-weight:bold;
+				margin-left:-6px;
+>>>>>>> 3430444b2c83e7133cb6ab84f77fd4bd8147cc4f
+			}
+			#pwd , #email
+			{
+				width:135px;
+				margin-left:-10px;
+				height:40px;
+			}
+			#register
+			{
+				float:right; 
+				margin-top:-20px; 
+				box-shadow:1px 1px 1px #a6a6a6; 
+				color: #a6a6a6;
+				height:20px;
+			}
+			#register p
+			{
+				margin-top:-8px;
 			}
 		}
