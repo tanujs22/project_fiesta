@@ -64,8 +64,6 @@ body
 		}
 		@media only screen and (max-width: 520px)
 		{
-<<<<<<< HEAD
-=======
 			#login
 			{
 				margin-top:50px; 
@@ -73,7 +71,6 @@ body
 				border-radius:5px;
 				
 			}
->>>>>>> 3430444b2c83e7133cb6ab84f77fd4bd8147cc4f
 			.btn-facebook
 			{
 				color:white;
@@ -105,23 +102,6 @@ body
 				float:left;
 				padding-top:2px;
 				padding-right:2px;
-<<<<<<< HEAD
-			}
-			.panel-footer a
-			{
-				color:#a6a6a6;
-				text-decoration:none;
-				font-size:14px;
-				font-weight:bold;
-				margin-left:-6px;
-			}
-			#register
-			{
-				float:right; 
-				margin-top:-50px; 
-				box-shadow:1px 1px 1px #a6a6a6; 
-				color: #a6a6a6;
-=======
 			}
 			.panel-footer a
 			{
@@ -202,7 +182,6 @@ body
 				font-size:9px;
 				font-weight:bold;
 				margin-left:-6px;
->>>>>>> 3430444b2c83e7133cb6ab84f77fd4bd8147cc4f
 			}
 			#pwd , #email
 			{
