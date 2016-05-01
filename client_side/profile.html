@@ -10,41 +10,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<link rel="stylesheet" href="css/profilestyle.css">
+	<link rel="stylesheet" href="profilestyle.css">
+	<style>
+		
+	</style>
 </head>
 <body>
 <div class="container-fluid">
   <div id="container">	
-  
 	<!-- ***bottom navbar starts*** -->
 	<nav class="navbar navbar-inverse navbar-fixed-bottom" id="bottom" style="">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-2">
+				<div class="col-xs-3">
 						<a href="#">
 							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-home"></span></center>
 							</button>
 						</a>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-3">
 						<a href="#">
-							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-search"></span></center>
+							<center><button type="button" class="btn btn-xs btn-link" id="a"><span class="glyphicon glyphicon-search"></span></center>
 							</button>
 						</a>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-xs-3">
 						<a href="#">
-							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-plus" style="margin-top:5px;"></span></center>
+							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-calendar"></span></center>
 							</button>
 						</a>
 				</div>
-				<div class="col-xs-2">
-						<a href="#">
-							<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-comment"></span></center>
-							</button>
-						</a>
-				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-3">
 						<a href="#">
 							<center><button type="button" class="btn btn-xs btn-link" id="active"><span class="glyphicon glyphicon-user"></span></center>
 							</button>
@@ -57,24 +53,16 @@
 	
 	<!-- ***top heading starts*** -->
 	<br>
-	<div class="navtop">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-1">
-					<span class="glyphicon glyphicon-menu-left" style=""></span>
-				</div>
-				<div class="col-xs-4">
-				</div>
-				<div class="col-xs-4">
-					<a class="navbar-brand" href="#"><center><h2>My Profile</h2></center></a>
-				</div>
-				<div class="col-xs-3">
-				</div>
+	<!-- header starts -->
+		<div id="topnav">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+					<a href="#"><span class="glyphicon glyphicon-menu-left"></span></a>
+					<a href="#" style="text-decoration:none;"><h2>Profile</h2></a>
 			</div>
-		</div>
-	</nav>
+		</nav>
 	</div>
+	<!-- header ends -->
 	<!-- ***top heading ends*** -->
 	
 	<br><br><br>
@@ -93,10 +81,10 @@
 	<!-- ***follower and following buttons*** -->
 	<div class="row" id="2">
 		<div class="col-xs-6">
-			<center><button type="button" class="btn btn-xs btn-link">Followers<span class="badge">20</span></button></center>
+			<center><button type="button" class="btn btn-xs btn-link" id="fllw" style="text-decoration:none;">Followers<span class="badge">20</span></button></center>
 		</div>
 		<div class="col-xs-6">
-			<center><button type="button" class="btn btn-xs btn-link">Following<span class="badge">40</span></button></center>
+			<center><button type="button" class="btn btn-xs btn-link" id="fllw">Following<span class="badge">40</span></button></center>
 		</div>
 	</div>
 	</div>
@@ -104,40 +92,84 @@
 	
 	<br><br>
 	
-	<!-- ***menu starts here*** -->
-	<div class="menu">
-	<div class="row">
-		<div class="col-xs-3">
-			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-th"></span></button></center>
+	<!-- ***option bar starts*** -->
+	<nav class="navbar navbar-default" id="menu">
+		<div id="myNavbar">
+			<ul>
+				<div class="row">
+					<div class="col-xs-3">
+						<li><a href="#host"><span class="glyphicon glyphicon-th"></span></a></li>
+					</div>
+					<div class="col-xs-3">
+						<li><a href="#attend"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+					</div>
+					<div class="col-xs-3">
+						<li><a href="#venue"><span class="glyphicon glyphicon-map-marker"></a></li>
+					</div>
+					<div class="col-xs-3">
+						<li><a href="#pricing"><span class="glyphicon glyphicon-list"></span></a></li>
+					</div>
+				</div>
+			</ul>
 		</div>
-		<div class="col-xs-3">
-			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-menu-hamburger"></span></button></center>
-		</div>
-		<div class="col-xs-3">
-			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-map-marker"></span></button></center>
-		</div>
-		<div class="col-xs-3">
-			<center><button type="button" class="btn btn-xs btn-link"><span class="glyphicon glyphicon-list"></span></button></center>
-		</div>
-	</div>
-	<!-- ***menu ends here*** -->
+	</nav>
+	<!-- ***option bar ends*** -->
 	
+	<!-- ***Option display Section starts*** -->
+	<div class="display">
+		<!-- ***Hosting Section starts*** -->
+		<div id="host" class="container-fluid">
+			<div class="row">
+				<h5>YOU ARE HOSTING</h5>
+				<div class="col-xs-6">
+					<a href="#">
+					<div class="panel panel-default">
+						<div class="panel-body" style="background-image:url('cover.jpg'); ">
+							<h5>FIESTA</h5>
+							<h6>150</h6>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6">
+				</div>
+			</div>
+		</div>
+		<!-- ***Hosting Section Ends*** -->
+		<!-- ***Attending Section Starts*** -->
+		<div id="attend" class="container-fluid">
+			<div class="row">
+				<h5>YOU ARE ATTENDING</h5>
+				<div class="col-xs-6">
+					<a href="#">
+					<div class="panel panel-default">
+						<div class="panel-body" style="background-image:url('cover1.jpg');">
+							<h5>Neon Party</h5><br>
+							<h6 style="float:left;">G.Noida</h6>
+							<h6 style="margin-left:0px;">120</h6>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="col-xs-6">
+					<a href="#">
+					<div class="panel panel-default">
+						<div class="panel-body" style="background-image:url('cover2.jpg');">
+							<h5>Vamp Hunt</h5><br>
+							<h6 style="float:left;">Janakpuri</h6>
+							<h6 style="margin-left:0px;">200</h6>
+						</div>
+					</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- ***Attending Section Ends*** -->
+	</div>
+	<!-- ***Option display section ends*** -->	
 	<hr>
 	<br><br>
-	
-	<!-- ***follow button*** -->
-	<div class="row">
-		<div class="col-xs-3">
-		</div>
-		<div class="col-xs-6">
-			<button type="button" class="btn btn-xs btn-primary btn-block" id="follow"><h6><span class="glyphicon glyphicon-plus">FOLLOW</span></h6></button>
-		</div>
-		<div class="col-xs-3">
-		</div>
-	</div>
-	</div>
-	<!-- ***follow button ends*** -->
-  </div>
+ </div>
 </div>
 </body>
 </html>
