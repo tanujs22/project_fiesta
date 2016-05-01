@@ -1,25 +1,25 @@
-body
+		body
 		{
 			background-color:#f2f2f2;
+			font-family:sans-serif;
 		}
-		#active
+		h2
 		{
-			border-radius:120px; 
-			background-color:#ec0249; 
-			height:80px; 
-			width:85px; 
-			margin-top:-20px;
-			color:#ffffff;
+			text-align:center;
+			font-size:45px; 
+			color:#262626;
+			font-weight:bold;
+			margin-top:-45px; 
+			text-shadow: 2px 2px #d9d9d9;
+		}
+		li
+		{
+			text-align:center;
 		}
 		#bottom
 		{
 			background-color:#262626;
 			height:40px;
-		}
-		#a
-		{
-			font-size:25px;
-			color:#ec0249;
 		}
 		button span
 		{
@@ -27,19 +27,17 @@ body
 			font-size:25px;
 			color:#ffffff;
 		}
-		
-		.navbar-brand h2
+		#active
 		{
-			font-size:30px; 
-			color:dark gray; 
-			font-weight:bold; 
-			margin-top:-15px;
+			border-bottom-color:#ec0249;
+			width:100px;
+			margin-top:-1px;
+			padding-bottom:5px;
+			color: #ec0249;
 		}
-		.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+		#active span
 		{
-			color: #828282;
-			font-size:25px; 
-			font-weight:bold;
+			color:#ec0249;
 		}
 		.navbar-default
 		{
@@ -54,6 +52,13 @@ body
 			font-size:30px; 
 			padding-top:10px; 
 			font-weight:bold;
+		}
+		.navbar-brand h2
+		{
+			font-size:30px; 
+			color:dark gray; 
+			font-weight:bold; 
+			margin-top:-15px;
 		}
 		.profile
 		{
@@ -84,20 +89,16 @@ body
 			color:#828282; 
 			font-weight:bold;
 		}
+		#fllw
+		{
+			text-decoration:none;
+		}
 		.badge
 		{
 			background-color:#ffffff; 
 			color:#828282; 
 			font-size:19px;
 			margin-bottom:10px;
-		}
-		.menu
-		{
-			background-color:#ffffff; 
-			padding:30px; 
-			border-radius:5px;
-			height:600px;
-			box-shadow:2px 2px #d9d9d9;
 		}
 		#follow
 		{
@@ -108,48 +109,115 @@ body
 			border-color:#ec0249;
 			box-shadow:2px 2px #d9d9d9;
 		}
+		.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+		{
+			color: #828282;
+			font-size:25px; 
+			font-weight:bold;
+		}
+		#menu
+		{
+			background-color:#ffffff;
+			border-radius:5px;
+		}
+		#menu ul
+		{
+			list-style-type: none;
+		}
+		.display
+		{
+			background-color:#ffffff; 
+			padding:5px;
+			box-shadow:2px 2px #d9d9d9; 
+			border-radius:5px;
+		}
+		#host h5
+		{
+			color:#828282; 
+			font-weight:bold; 
+			font-size:17px; 
+			margin-left:10px;
+		}
+		#host .panel-default
+		{
+			border-radius:5px; 
+			box-shadow:2px 2px #d9d9d9;
+		}
+		#host .panel-body
+		{
+			height:300px;
+			background-repeat:no-repeat;
+			background-size: 100% 100%;
+			border-radius:5px;
+		}
+		#host .panel-body h5
+		{
+			float:left;
+			color:#ffffff;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:255px;
+			margin-left:-5px;
+		}
+		#host .panel-body h6
+		{
+			float:right;
+			color:white;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:255px;
+		}
+		#attend h5
+		{
+			color:#828282; 
+			font-weight:bold;
+			font-size:17px; 
+			margin-left:10px;
+		}
+		#attend .panel-default
+		{
+			border-radius:5px; 
+			box-shadow:2px 2px #d9d9d9;
+		}
+		#attend .panel-body
+		{
+			height:300px;
+			background-repeat:no-repeat;
+			background-size: 100% 100%;
+			border-radius:5px;
+		}
+		#attend .panel-body h5
+		{
+			float:left;
+			color:white;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:235px;
+			margin-left:-10px;
+		}
+		#attend .panel-body h6
+		{
+			float:right;
+			color:white;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:240px;
+			margin-left:-100px;
+		}
 		@media only screen and (max-width: 500px)
 		{
-			#active
+			#active span
 			{
-				border-radius:100px; 
-				background-color:#ec0249; 
-				height:70px; 
-				width:55px; 
-				margin-top:-10px;
-				color:#ffffff;
-				padding-right:100px;
+				margin-left:-20px;
 			}
-			#bottom
+			h2
 			{
-				background-color:#262626;
-				height:40px;
-			}
-			.glyphicon-search
-			{
-				padding-left:10px;
-			}
-			.glyphicon-plus  
-			{
-				padding-left:25px;
-			}
-			.glyphicon-comment
-			{
-				padding-right:0px;
-			}
-			button span
-			{
-				margin-top:10px;
-				font-size:25px;
-				color:#ffffff;
-			}
-			.navbar-default
-			{
-				background-color:#f9f9f9;
-				border-color:#f9f9f9;
-				padding:10px;
-				border-radius:5px;
-				box-shadow:2px 2px #d9d9d9;
+				text-align:center;
+				font-size:25px; 
+				color:#262626;
+				font-weight:bold;
+				margin-top:-25px; 
+				text-shadow: 2px 2px #d9d9d9;
 			}
 			.glyphicon-menu-left
 			{
@@ -161,16 +229,9 @@ body
 			.navbar-brand h2
 			{
 				font-size:22px; 
-				color:dark gray; 
 				font-weight:bold; 
 				margin-top:-10px;
 				margin-left:-45px;
-			}
-			.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
-			{
-				color: #828282;
-				font-size:15px; 
-				font-weight:bold;
 			}
 			.profile
 			{
@@ -192,16 +253,8 @@ body
 			}
 			img
 			{
-				width: 150px ;
-				height: 100px;
-			}
-			.menu
-			{
-				background-color:#ffffff; 
-				padding:30px; 
-				border-radius:5px;
-				height:400px;
-				box-shadow:2px 2px #d9d9d9;
+				width: 100px ;
+				height: 90px;
 			}
 			.row button
 			{
@@ -216,17 +269,6 @@ body
 				font-size:14px;
 				margin-bottom:10px;
 			}
-			#follow span
-			{
-				background-color:#ec0249;
-				color:#ffffff; 
-				font-size:17px; 
-				font-weight:bold; 
-				border-color:#ec0249;
-				margin-right:10px;
-				padding-right:10px;
-				margin-bottom:10px;
-			}
 			#follow
 			{
 				background-color:#ec0249;
@@ -237,5 +279,60 @@ body
 				width:150px;
 				margin-left:-35px;
 				box-shadow:1px 1px #d9d9d9;
+			}
+			#menu span
+			{
+				margin-left:-30px;
+			}
+			.glyphicon-th , .glyphicon-menu-hamburger , .glyphicon-map-marker , .glyphicon-list
+			{
+				color: #828282;
+				font-size:15px; 
+				font-weight:bold;
+			}
+			#host h5
+			{
+				color:#828282; 
+				font-weight:bold; 
+				font-size:13px; 
+				margin-left:10px;
+			}
+			#host .panel-body
+			{
+				height:200px;
+			}
+			#host .panel-body h5
+			{
+				font-size:15px;
+				margin-top:155px;
+				margin-left:-5px;
+			}
+			#host .panel-body h6
+			{
+				font-size:15px;
+				margin-top:155px;
+			}
+			#attend h5
+			{
+				color:#828282; 
+				font-weight:bold;
+				font-size:13px; 
+				margin-left:10px;
+			}
+			#attend .panel-body
+			{
+				height:200px;
+			}
+			#attend .panel-body h5
+			{
+				font-size:15px;
+				margin-top:135px;
+				margin-left:-10px;
+			}
+			#attend .panel-body h6
+			{
+				font-size:15px;
+				margin-top:140px;
+				margin-left:-78px;
 			}
 		}
